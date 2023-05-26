@@ -1,0 +1,55 @@
+{
+    "user" : {
+        "titlebootstrap":"MY BOOTSTRAP PERSONAL WEBSITE",
+        "titlematerialize":"MY MATERIALIZE PERSONAL WEBSITE",
+        "bootbrotitle":"BOOTSTRAP Framework",
+        "matbrotitle":"MATERIALIZE Framework",
+        "fullName": "Name: Fabchi RJ",
+        "Sex":"Sex: Male",
+        "Age":"Age:Lol You ain't seeing that one",
+        "Nationality":"Nationality: Cameroonian",
+        "Occupation":"Occupation: 4IR Mining Engineer",
+        "Location":"Place of study: University of Johannesburg",
+        "photo" : "FRJ.png"
+    },
+    "city" : {
+        "name" : "CITY OF MADRID",
+        "photo" :"madridcity.png",
+        "description" : "The Spanish capital is one of the most populous in the European Union, a cosmopolitan city where people of over 180 nationalities live together. Expatriates feel at home as they easily make friends with Madrid's amiable residents and adapt to the local culture, enjoying this open, inclusive city. It is also the city where my favorite soccer club is found hence the reason I would like to visit it."
+    },
+    
+    "foreignLanguage" : {
+        "language" : "SPANISH",
+        "phrases" : [
+         {
+            "englishPhrase" : "In the journey of life every single step counts",
+            "foreignLanguage" : "En el camino de la vida cada paso cuenta"
+        },
+        {
+            "englishPhrase" : "Beneath every cloud lies a silver lining that is to say everyone's opinion counts for something.",
+            "foreignLanguage" : "Debajo de cada nube hay un rayo de luz, es decir, la opinión de todos cuenta para algo."
+        },
+        {
+            "englishPhrase" : "Failing to Plan is planning to fail",
+            "foreignLanguage" : "No planificar es planificar el fracaso"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Mine Planning and design",
+            "description" : "Mine planning and design involves compiling and incorporating suitable geotechnical, geochemical, geological, mining, engineering, and economic data in order to establish an approach to exploit a specific mineral deposit within the legal and regulatory requirements ",
+            "photo" : "mineplanning.png"
+        },
+        {
+            "name" : "Occupational Hygiene",
+            "description" : "Occupational hygiene is the anticipation, recognition, evaluation, control, and confirmation of protection from risks associated with exposures to hazards in, or arising from, the workplace that may result in injury, illness, impairment, or affect the well-being of workers and members of the community.",
+            "photo" : "occupationalhygiene.png"
+        },
+        
+        {
+            "name" : "Geotechnical Engineering",
+            "description" : "Geotechnical engineering, also known as geotechnics, is the branch of civil engineering concerned with the engineering behavior of earth materials. It uses the principles of soil mechanics and rock mechanics for the solution of its respective engineering problems.",
+            "photo" : "geotechnicalengineering.png"
+        }
+    ]
+}
