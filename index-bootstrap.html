@@ -34,12 +34,12 @@
         <section>
             <div class="row p-6">
                 <div class="col-sm-8 p-6">
-                    <p>{{data.user.fullName}}</p>
-                    <p>{{data.user.Sex}}</p>
-                    <p>{{data.user.Age}}</p>
-                    <p>{{data.user.Nationality}}</p>
-                    <p>{{data.user.Occupation}}</p>
-                    <p>{{data.user.Location}}</p>
+                    <p><strong>{{data.user.fullName}}</strong></p>
+                    <p><strong>{{data.user.Sex}}</strong></p>
+                    <p><strong>{{data.user.Age}}</strong></p>
+                    <p><strong>{{data.user.Nationality}}</strong></p>
+                    <p><strong>{{data.user.Occupation}}</strong></p>
+                    <p><strong>{{data.user.Location}}</strong></p>
                 </div>
                 <div class="col-sm-4  p-6">
                     <img src={{data.user.photo}} width="50%"  class="rounded" alt="image">
@@ -51,13 +51,14 @@
             <div class="row p-1">
                 <div class="col-sm-6">
                             <div>
-                                <h2>{{data.city.name}}</h2>
+                                <strong><p>{{data.city.name}}</p></strong>
                             </div>
                     <div>
                         <img src={{data.city.photo}} width="50%"  class="rounded" alt="image">
                     </div>
                 </div>
             <div class="col-sm-6">
+                <strong><p class="text-center">DESCRIPTION</p></strong>
                 <p>
                     {{data.city.description}}
                 </p>

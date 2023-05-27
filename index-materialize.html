@@ -36,14 +36,14 @@
   <hr>
   <section>
     <div class="row">
-      <div class="col s6 ">
+      <div class="col m8 l6 s12">
                 <div class="col s12 m8 l12">
-                <p class="left-align"> {{data.user.fullName}}</p>
-                <p class="left-align">{{data.user.Sex}}</p>
-                <p class="left-align">{{data.user.Age}}</p>
-                <p class="left-align">{{data.user.Nationality}}</p>
-                <p class="left-align">{{data.user.Occupation}}</p>
-                <p class="left-align">{{data.user.Location}}</p>
+                  <p><strong>{{data.user.fullName}}</strong></p>
+                  <p><strong>{{data.user.Sex}}</strong></p>
+                  <p><strong>{{data.user.Age}}</strong></p>
+                  <p><strong>{{data.user.Nationality}}</strong></p>
+                  <p><strong>{{data.user.Occupation}}</strong></p>
+                  <p><strong>{{data.user.Location}}</strong></p>
               </div>
       </div>
       <div class="row">
@@ -62,15 +62,15 @@
         <div class="col s12 m8 l6">
          <div class="col s12 m8 l12">
           <div>
-            <h5>{{data.city.name}}</h5>
+            <strong><p>{{data.city.name}}</p></strong>
           <img class="responsive-img" src={{data.city.photo}} width="50%" height="50%"  class="rounded" alt="image">
          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col s6 m l ">
+        <div class="col s12 m8 l6 ">
                   <div class="col s12 m8 l12">
-                    <p class="center-align">DESCRIPTION</p>
+                    <strong><p class="center-align">DESCRIPTION</p></strong>
                   <p class="left-align"> {{data.city.description}}</p>
                 </div>
         </div>
