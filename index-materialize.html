@@ -18,18 +18,18 @@
   
   <section>
     <div class="row">
-      <div class="col s12 m4 l12">
+      <div class="col col s12 l4 l12">
         <flash><h5 class="center-align">{{data.user.titlematerialize}}</h5></flash>
       </div>
     </div>
   </section>
   <section>
     <div class="row">
-      <div class="col s12">
+      <div class="col l9">
         <ul class="tabs">
-          <li class="tab col s3"><a href="index.html">HOME</a></li>
-          <li class="tab col s3"><a href="index-materialize.html">Materialize Framework</a></li>
-          <li class="tab col s3"><a href="index-bootstrap.html">Bootstrap Framework</a></li>
+          <li class="tab col s8 m6 l3"><a href="index.html">HOME</a></li>
+          <li class="tab col s8 m6 l3"><a href="index-materialize.html">Materialize</a></li>
+          <li class="tab col s8 m6 l3"><a href="index-bootstrap.html">Bootstrap</a></li>
         </ul>
       </div>
   </section>
@@ -110,12 +110,12 @@
     {{#each data.favouriteSubjects}}
             <div class="row">
                       <div class="col s12 l4 m8">
-                        <h5>{{name}}</h5>
+                       <strong> <p>{{name}}</p></strong>
                         <div class="col s12 l7 m8">
                           <p class = "text-right" >{{description}}</p> 
                         </div>
                         <div class="col s12 l5 m8">
-                          <img src={{photo}} width="125%" class="rounded" alt="image"> 
+                          <img src={{photo}} width="50%" class="rounded" alt="image"> 
                         </div>
                         </div>
     {{/each}}

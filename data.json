@@ -36,18 +36,18 @@
     },
     "favouriteSubjects" : [
         {
-            "name" : "Mine Planning and design",
+            "name" : "MINE PLANNING & DESIGN",
             "description" : "Mine planning and design involves compiling and incorporating suitable geotechnical, geochemical, geological, mining, engineering, and economic data in order to establish an approach to exploit a specific mineral deposit within the legal and regulatory requirements ",
             "photo" : "mineplanning.png"
         },
         {
-            "name" : "Occupational Hygiene",
+            "name" : "OCCUPATIONAL HYGIENE",
             "description" : "Occupational hygiene is the anticipation, recognition, evaluation, control, and confirmation of protection from risks associated with exposures to hazards in, or arising from, the workplace that may result in injury, illness, impairment, or affect the well-being of workers and members of the community.",
             "photo" : "occupationalhygiene.png"
         },
         
         {
-            "name" : "Geotechnical Engineering",
+            "name" : "GEOTECHNICAL ENGINEERING",
             "description" : "Geotechnical engineering, also known as geotechnics, is the branch of civil engineering concerned with the engineering behavior of earth materials. It uses the principles of soil mechanics and rock mechanics for the solution of its respective engineering problems.",
             "photo" : "geotechnicalengineering.png"
         }
