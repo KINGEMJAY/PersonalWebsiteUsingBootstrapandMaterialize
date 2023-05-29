@@ -13,134 +13,167 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
           
 </head>
-<body>
-<div class="container" >
+<body style="background-image: url(/bgrnd.PNG); background-size: cover; background-repeat: no-repeat">
+
+
+
+<main class="container-fluid" style="background-color: rgba(0, 0, 0, 0.119)">
+
+  <div class="container" >
   
-  <section>
-    <div class="row">
-      <div class="col col s12 l4 l12">
-        <strong><p class="center-align">{{data.user.titlematerialize}}</p></strong>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="row">
-      <div class="col l9">
-        <ul class="tabs">
-          <li class="tab col s8 m6 l3"><a href="index.html">HOME</a></li>
-          <li class="tab col s8 m6 l3"><a href="index-materialize.html">Materialize</a></li>
-          <li class="tab col s8 m6 l3"><a href="index-bootstrap.html">Bootstrap</a></li>
-        </ul>
-      </div>
-  </section>
-  <hr>
-  <section>
-    <div class="row">
-      <div class="col m8 l6 s12">
-                <div class="col s12 m8 l12">
-                  <p><strong>{{data.user.fullName}}</strong></p>
-                  <p><strong>{{data.user.Sex}}</strong></p>
-                  <p><strong>{{data.user.Age}}</strong></p>
-                  <p><strong>{{data.user.Nationality}}</strong></p>
-                  <p><strong>{{data.user.Occupation}}</strong></p>
-                  <p><strong>{{data.user.Location}}</strong></p>
-              </div>
-      </div>
+    <section>
       <div class="row">
-        <div class="col s12 m8 l6">
-         <div class="col s12 m8 l12">
-          <img class="responsive-img" src={{data.user.photo}} width="50%" height="150%"  class="rounded" alt="image">
-         </div>
+        <div class="col col s12 l4 l12">
+          <strong><p class="center-align">{{data.user.titlematerialize}}</p></strong>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="row">
+        <div class="col l9">
+          <ul class="tabs">
+            <li class="tab col s8 m6 l3"><a href="index.html">HOME</a></li>
+            <li class="tab col s8 m6 l3"><a href="index-materialize.html">Materialize</a></li>
+            <li class="tab col s8 m6 l3"><a href="index-bootstrap.html">Bootstrap</a></li>
+          </ul>
+        </div>
     </section>
     <hr>
     <section>
-
-      <div class="row">
-        <div class="col s12 m8 l6">
-         <div class="col s12 m8 l12">
-          <div>
-            <strong><p>{{data.city.name}}</p></strong>
-          <img class="responsive-img" src={{data.city.photo}} width="50%" height="50%"  class="rounded" alt="image">
-         </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m8 l6 ">
-                  <div class="col s12 m8 l12">
-                    <strong><p class="center-align">DESCRIPTION</p></strong>
-                  <p class="left-align"> {{data.city.description}}</p>
+      <div Class="row">
+        <div class="col m8 l6 s12">
+                  <div class="col s12 m8 l12" style="color: black">
+                    <p><strong>{{data.user.fullName}}</strong></p>
+                    <p><strong>{{data.user.Sex}}</strong></p>
+                    <p><strong>{{data.user.Age}}</strong></p>
+                    <p><strong>{{data.user.Nationality}}</strong></p>
+                    <p><strong>{{data.user.Occupation}}</strong></p>
+                    <p><strong>{{data.user.Location}}</strong></p>
                 </div>
         </div>
-      </div>
-    </section>
-    <hr>
-    <marquee behavior="alternate" direction="right"><p>LANGUAGE <strong>{{data.foreignLanguage.language}}</strong></p></marquee>
-    <section>
-      <div class="s12 m6 l12">
-        
-      </div>
-  
-      <div class="s12 m8 l12">
-        <table class="striped bordered">
-          <thead>
-              <tr>
-                  <th>ENGLISH PHRASE</th>
-                  <th>FOREIGN PHRASE</th>
-              </tr>
-          </thead>
-          {{#each data.foreignLanguage.phrases}}
-          <tr>
-              <td>{{englishPhrase}}</td>
-              <td>{{foreignLanguage}}</td>
-          </tr>
-          {{/each}}
-          <table>
-  
-  
+        <div class="row">
+          <div class="col s12 m8 l6">
+           <div class="col s12 m8 l12" style="margin: auto;
+           padding: 0.5em;
+           width: 100%;
+           text-align: center;
+           background-color: rgba(255, 255, 255, 0.3);
+           background-image: url({{data.user.materializeMountain}}); background-size: cover">
+            <img class="responsive-img" src={{data.user.photo}} width="50%" height="150%"  class="rounded" alt="image">
+           </div>
+          </div>
+        </div>
       </div>
       </section>
-      <marquee behavior="alternate" direction="left"><p>FAVORITE SUBJECTS</strong></p></marquee>
+      <hr>
+      <section>
+
+        <div class="center-align" style="margin: auto;
+        padding: 1em;
+        text-align: center; color: black;">
+
+        <h5>{{data.city.title}}</h5>
+    </div>
+  
+        <div class="row">
+          <div class="col s12 m8 l6">
+           <div class="col s12 m8 l12">
+            <div>
+              <strong><p>{{data.city.name}}</p></strong>
+            <img class="responsive-img" src={{data.city.photo}} width="50%" height="50%"  class="rounded" alt="image">
+           </div>
+          </div>
+        </div>
+        <div class="row" style="color: white">
+          <div class="col s12 m8 l6 ">
+                    <div class="col s12 m8 l12">
+                      <strong><p class="center-align">DESCRIPTION</p></strong>
+                    <p class="left-align"> {{data.city.description}}</p>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <div style="color: pink">
+        <marquee behavior="alternate" direction="right"><p>LANGUAGE <strong>{{data.foreignLanguage.language}}</strong></p></marquee>
+
+      </div>
+      <section>
+        <div class="row" style="color: rgba(255, 255, 255, 0.626)">
+
+          <div class="s12 m6 l12">
+          
+          </div>
+      
+          <div class="s12 m8 l12">
+            <table class="striped bordered">
+              <thead>
+                  <tr>
+                      <th>ENGLISH PHRASE</th>
+                      <th>FOREIGN PHRASE</th>
+                  </tr>
+              </thead>
+              {{#each data.foreignLanguage.phrases}}
+              <tr>
+                  <td>{{englishPhrase}}</td>
+                  <td>{{foreignLanguage}}</td>
+              </tr>
+              {{/each}}
+              <table>
+          </div>
+        </div>
+        </section>
+        <hr>
+    <section>
+      <div class="center-align" style="margin: auto;
+        padding: 1em;
+        text-align: center;">
+
+        <h5>{{data.user.placeStudy}}</h5>
+    </div>
+        <div style="color: yellow">
+          <marquee behavior="alternate" direction="left"><p>FAVORITE SUBJECTS</strong></p></marquee>
+        </div>
+      <div class="s12 m6 l12">
+      {{#each data.favouriteSubjects}}
+              <div class="row" style="color: white">
+                        <div class="col s12 l4 m8">
+                         <strong> <p>{{name}}</p></strong>
+                          <div class="col s12 l7 m8">
+                            <p class = "text-right" >{{description}}</p> 
+                          </div>
+                          <div class="col s12 l5 m8">
+                            <img src={{photo}} width="50%" class="rounded" alt="image"> 
+                          </div>
+                          </div>
+      {{/each}}
+              </div>
+        
+       </div>
+  
+    </section>
+    <hr>
+    
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script> 
+</main>
+  </body>
+  
   <section>
-    <div class="s12 m6 l12">
-      
+  
+    <footer class="page-footer">
+    
+    <div class="footer-copyright">
+      <div class="container">
+      © 2023 Copyright Reserved
+      <a class="grey-text text-lighten-4 right" href="#!">UJ & ACCENTURE WORK READINESS PROGRAM</a>
+      </div>
     </div>
-    {{#each data.favouriteSubjects}}
-            <div class="row">
-                      <div class="col s12 l4 m8">
-                       <strong> <p>{{name}}</p></strong>
-                        <div class="col s12 l7 m8">
-                          <p class = "text-right" >{{description}}</p> 
-                        </div>
-                        <div class="col s12 l5 m8">
-                          <img src={{photo}} width="50%" class="rounded" alt="image"> 
-                        </div>
-                        </div>
-    {{/each}}
-            </div>
-      
-     </div>
-
   </section>
-  <hr>
-  
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script> 
-</body>
 
-<section>
 
-  <footer class="page-footer">
-  
-  <div class="footer-copyright">
-    <div class="container">
-    © 2023 Copyright Reserved
-    <a class="grey-text text-lighten-4 right" href="#!">UJ & ACCENTURE WORK READINESS PROGRAM</a>
-    </div>
-  </div>
-</section>
+
+
 
 </footer>
 

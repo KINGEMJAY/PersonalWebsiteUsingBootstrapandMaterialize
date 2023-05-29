@@ -10,119 +10,139 @@
 </head>
 
 <body>
-    <div class="container-md">
+    <main style="background-image: url(/bgrndboot.PNG); background-size: cover; background-repeat: no-repeat">
 
-        <section>
-            
-                <div class="container text-center">
-                    <br><br>
-                    <strong><p>{{data.user.titlebootstrap}}</p></strong>
-                </div>
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index-materialize.html">MATERIALIZE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index-bootstrap.html">BOOTSTRAP</a>
-                    </li>
-                  </ul>
-        </section>
-        <hr>
-        <section>
-            <div class="row p-6">
-                <div class="col-sm-8 p-6">
-                    <p><strong>{{data.user.fullName}}</strong></p>
-                    <p><strong>{{data.user.Sex}}</strong></p>
-                    <p><strong>{{data.user.Age}}</strong></p>
-                    <p><strong>{{data.user.Nationality}}</strong></p>
-                    <p><strong>{{data.user.Occupation}}</strong></p>
-                    <p><strong>{{data.user.Location}}</strong></p>
-                </div>
-                <div class="col-sm-4  p-6">
-                    <img src={{data.user.photo}} width="50%"  class="rounded" alt="image">
-                </div>
+        <div class="container-md">
 
-        </section>
-<br><hr>
-        <section>
-            <div class="row p-1">
+            <section>
+                
+                    <div class="container text-center">
+                        <br><br>
+                        <strong><p>{{data.user.titlebootstrap}}</p></strong>
+                    </div>
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="index-materialize.html">MATERIALIZE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index-bootstrap.html">BOOTSTRAP</a>
+                        </li>
+                      </ul>
+            </section>
+            <hr>
+            <section>
+                <div class="row p-6">
+                    <div class="col-sm-8 p-6">
+                        <p><strong>{{data.user.fullName}}</strong></p>
+                        <p><strong>{{data.user.Sex}}</strong></p>
+                        <p><strong>{{data.user.Age}}</strong></p>
+                        <p><strong>{{data.user.Nationality}}</strong></p>
+                        <p><strong>{{data.user.Occupation}}</strong></p>
+                        <p><strong>{{data.user.Location}}</strong></p>
+                    </div>
+                    <div class="col-sm-4 p-6" style="margin: auto;
+                    text-align: center;
+                    background-image: url({{data.user.bootStrapMountain}}); background-size: cover" >
+                        <img src={{data.user.photo}} width="70%" height="150%"  class="rounded" alt="image" text-align="left">
+                    </div>
+    
+            </section>
+    <br><hr>
+            <section>
+
+                <div class="center-align" style="margin: auto;
+        padding: 1em;
+        text-align: center; color: black;">
+
+        <h5>{{data.city.title}}</h5>
+    </div>
+                <div class="row p-1" style="color: white;">
+                    <div class="col-sm-6">
+                                <div>
+                                    <strong><p>{{data.city.name}}</p></strong>
+                                </div>
+                        <div>
+                            <img src={{data.city.photo}} width="50%"  class="rounded" alt="image">
+                        </div>
+                    </div>
                 <div class="col-sm-6">
-                            <div>
-                                <strong><p>{{data.city.name}}</p></strong>
-                            </div>
+                    <strong><p class="text-center">DESCRIPTION</p></strong>
+                    <p>
+                        {{data.city.description}}
+                    </p>
+                </div>
+            </div>
+    
+            </section>
+    <hr>
+            <section>
+                <div class="row p-1" style="color: white">
                     <div>
-                        <img src={{data.city.photo}} width="50%"  class="rounded" alt="image">
+                        <p><marquee behavior="alternate" direction="right">LANGUAGE {{data.foreignLanguage.language}}</marquee></p>
+                    </div>
+                    <div class="col-sm-12" style="color: yellow;">
+                        <table class="table table-bordered" style="color: yellow;">
+                            <thead>
+                                <tr>
+                                    <th>ENGLISH PHRASE</th>
+                                    <th>FOREIGN PHRASE</th>
+                                </tr>
+                            </thead>
+                            {{#each data.foreignLanguage.phrases}}
+                            <tr>
+                                <td>{{englishPhrase}}</td>
+                                <td>{{foreignLanguage}}</td>
+                            </tr>
+                            {{/each}}
+                            <table>
+    
                     </div>
                 </div>
-            <div class="col-sm-6">
-                <strong><p class="text-center">DESCRIPTION</p></strong>
-                <p>
-                    {{data.city.description}}
-                </p>
-            </div>
+    
+            </section>
+    <hr>
+            <section>
+                <div class="center-align" style="margin: auto;
+        padding: 1em;
+        text-align: center; color: yellow;">
+
+        <h5>{{data.user.placeStudy}}</h5>
+    </div>
+        <div style="color: yellow">
+          <marquee behavior="alternate" direction="left"><p>FAVORITE SUBJECTS</strong></p></marquee>
         </div>
-
-        </section>
-<hr>
-        <section>
-            <div class="row p-1">
-                <div>
-                    <p><marquee behavior="alternate" direction="right">LANGUAGE {{data.foreignLanguage.language}}</marquee></p>
-                </div>
-                <div class="col-sm-12">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>ENGLISH PHRASE</th>
-                                <th>FOREIGN PHRASE</th>
-                            </tr>
-                        </thead>
-                        {{#each data.foreignLanguage.phrases}}
-                        <tr>
-                            <td>{{englishPhrase}}</td>
-                            <td>{{foreignLanguage}}</td>
-                        </tr>
-                        {{/each}}
-                        <table>
-
-                </div>
-            </div>
-
-        </section>
-<hr>
-        <section>
-
-            <div class="row p-6">
-                <strong><marquee behavior="alternate" direction="left"><p>FAVORITE SUBJECTS</p></marquee></strong> 
- 
-                 {{#each data.favouriteSubjects}}
- 
-                <div class="col-sm-4">
-                            <div>
-                                <strong><p>{{name}}</p></strong>
+    
+                <div class="row p-6" style="color: white;">
+                     {{#each data.favouriteSubjects}}
+     
+                    <div class="col-sm-4">
+                                <div>
+                                    <strong><p>{{name}}</p></strong>
+                                </div>
+                            <div class="row p-6">
+                                        <div class="col-sm-8">
+                                            <p class = "text-right">{{description}}</p> 
+                                        </div>
+                                <div class="col-sm-4">
+                                        <img src={{photo}} width="50%" class="rounded" alt="image">
+                                </div>
                             </div>
-                        <div class="row p-6">
-                                    <div class="col-sm-8">
-                                        <p class = "text-right">{{description}}</p> 
-                                    </div>
-                            <div class="col-sm-4">
-                                    <img src={{photo}} width="50%" class="rounded" alt="image">
-                            </div>
-                        </div>
- 
+     
+                    </div>
+     
+                     {{/each}}
+     
                 </div>
- 
-                 {{/each}}
- 
-            </div>
+    
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    </main>
  </body>
  <section>
     <footer style="background-color: #ffffff3c;">

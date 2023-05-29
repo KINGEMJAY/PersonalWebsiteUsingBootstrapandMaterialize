@@ -10,9 +10,14 @@
         "Nationality":"Nationality: Cameroonian",
         "Occupation":"Occupation: 4IR Mining Engineer",
         "Location":"Place of study: University of Johannesburg",
+        "placeStudy":"BENG-TECH MINING ENGINEERING UNIVERSITY OF JOHANNESBURG",
+        "tableMountain":"tablemountain.jpeg",
+        "bootStrapMountain":"tablemountainbootstrap.png",
+        "materializeMountain":"tablemountainmaterialize.PNG",
         "photo" : "FRJ.png"
     },
     "city" : {
+        "title":"FAVORITE CITY",
         "name" : "CITY OF MADRID",
         "photo" :"madridcity.png",
         "description" : "The Spanish capital is one of the most populous in the European Union, a cosmopolitan city where people of over 180 nationalities live together. Expatriates feel at home as they easily make friends with Madrid's amiable residents and adapt to the local culture, enjoying this open, inclusive city. It is also the city where my favorite soccer club is found hence the reason I would like to visit it."
