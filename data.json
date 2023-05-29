@@ -11,8 +11,8 @@
         "Occupation":"Occupation: 4IR Mining Engineer",
         "Location":"Place of study: University of Johannesburg",
         "placeStudy":"BENG-TECH MINING ENGINEERING UNIVERSITY OF JOHANNESBURG",
-        "bootBackground":"url(/bgrndboot.png)",
-        "matBackground":"url(/bgrndmat.png)",
+        "bootBackground":"bgrndboot.png",
+        "matBackground":"bgrndmat.png",
         "bootStrapMountain":"tablemountainbootstrap.png",
         "materializeMountain":"tablemountainmaterialize.png",
         "photo" : "FRJ.png"
