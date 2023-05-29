@@ -14,7 +14,7 @@
         "bootBackground":"bgrndboot.png",
         "matBackground":"bgrndmat.png",
         "bootStrapMountain":"tablemountainbootstrap.png",
-        "materializeMountain":"tablemountainmaterialize.png",
+        "materializeMountain":"tablemountainmat.png",
         "photo" : "FRJ.png"
     },
     "city" : {
