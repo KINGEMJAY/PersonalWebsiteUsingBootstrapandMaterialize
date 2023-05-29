@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main style="background-image: url(/responsive_webpages/assets/table-mountain.f044eb68.jpeg); background-size: cover">
+    <main style="background-image: url('/responsive_webpages/assets/table-mountain.f044eb68.jpeg'); background-size: cover">
 
         <div class="container-md">
 
@@ -59,7 +59,7 @@
 
         <h5>{{data.city.title}}</h5>
     </div>
-                <div class="row p-1" style="color: white;">
+                <div class="row p-1" style="color: black;">
                     <div class="col-sm-6">
                                 <div>
                                     <strong><p>{{data.city.name}}</p></strong>
@@ -79,12 +79,12 @@
             </section>
     <hr>
             <section>
-                <div class="row p-1" style="color: white">
+                <div class="row p-1" style="color: black">
                     <div>
                         <p><marquee behavior="alternate" direction="right">LANGUAGE {{data.foreignLanguage.language}}</marquee></p>
                     </div>
-                    <div class="col-sm-12" style="color: yellow;">
-                        <table class="table table-bordered" style="color: yellow;">
+                    <div class="col-sm-12" style="color: green;">
+                        <table class="table table-bordered" style="color: green;">
                             <thead>
                                 <tr>
                                     <th>ENGLISH PHRASE</th>
@@ -107,15 +107,15 @@
             <section>
                 <div class="center-align" style="margin: auto;
         padding: 1em;
-        text-align: center; color: yellow;">
+        text-align: center; color: black;">
 
         <h5>{{data.user.placeStudy}}</h5>
     </div>
-        <div style="color: yellow">
+        <div style="color: black">
           <marquee behavior="alternate" direction="left"><p>FAVORITE SUBJECTS</strong></p></marquee>
         </div>
     
-                <div class="row p-6" style="color: white;">
+                <div class="row p-6" style="color: black;">
                      {{#each data.favouriteSubjects}}
      
                     <div class="col-sm-4">
